@@ -1,5 +1,4 @@
 /*
-  X-Real-IP: YSE
-  X-Forwarded-For: YSE
-  X-Forwarded-Proto: YSE
-  CF-Connecting-IP: YSE
+  X-Real-IP: CF-Connecting-IP
+  X-Forwarded-For: CF-Connecting-IP
+  X-Forwarded-Proto: CF-Connecting-IP
