@@ -1,5 +1,4 @@
 /*
-  X-Real-IP: CF-Connecting-IP
-  X-Forwarded-For: CF-Connecting-IP
-  X-Forwarded-Proto: CF-Connecting-IP
-  CF-Connecting-IP: True
+  X-Real-IP: document-domain=()
+  X-Forwarded-For: document-domain=()
+  X-Forwarded-Proto: document-domain=()
