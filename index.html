@@ -41,10 +41,13 @@
 				<!-- 小标题一句话介绍 -->
 				<h5>My Name Is Wu Rao Kong Shan</h5>
 				<!-- 获取访客IP -->
-				您的IP:<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
-				<script type="text/javascript">
-                  document.write(returnCitySN["cip"]+','+returnCitySN["cname"])</script>
-				  <br>
+				<script type="application/javascript">
+					function getIP(json) {
+						document.write("您的IP:", json.ip);
+					}
+				</script>
+				<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+				<br>
 				<!-- 一言和今日诗词2选1,去掉注释即可，选择诗词 -->
 				<!-- 一言 -->
 			     <p id="hitokoto_text">em...</p>
