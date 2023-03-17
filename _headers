@@ -2,3 +2,4 @@
   X-Real-IP: CF-Connecting-IP
   X-Forwarded-For: CF-Connecting-IP
   X-Forwarded-Proto: CF-Connecting-IP
+  CF-Connecting-IP: True
