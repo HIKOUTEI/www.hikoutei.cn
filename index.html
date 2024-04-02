@@ -6,90 +6,111 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<!-- SEO名称/页面名称 -->
-		<title>飛行艇</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<head>
+    <!-- SEO名称/页面名称 -->
+    <title>飛行艇</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-		<!-- 页面ico图标 -->
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="./css/main.css" />
-		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	</head>
-	   <!-- 渐变背景图片样式 -->
-	<style type="text/css">
-		#canvas-image-blending {
-			position: absolute;
-			display: block;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-		}
-		</style>
+    <!-- 页面ico图标 -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<!-- 渐变背景图片样式 -->
+<style type="text/css">
+    #canvas-image-blending {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+</style>
 
-	<!-- 渐变背景初始化 -->
-    <canvas id="canvas-image-blending"></canvas>
-	<body class="is-preload">
-		<!-- Header -->
-			<header id="header">
-				<!-- 大标题名称 -->
-				<h1>飛行艇</h1>
-				<!-- 小标题一句话介绍 -->
-				<h5>My Name Is Wu Rao Kong Shan</h5>
-				<!-- 获取访客IP -->
-				<script type="application/javascript">
-					function getIP(json) {
-						document.write("您的IP: ", json.ip);
-					}
-				</script>
-				<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-				<br>
-				<!-- 一言和今日诗词2选1,去掉注释即可，选择诗词 -->
-				<!-- 一言 -->
-			     <p id="hitokoto_text">em...</p>
+<!-- 渐变背景初始化 -->
+<canvas id="canvas-image-blending"></canvas>
+<body class="is-preload">
+<!-- Header -->
+<header id="header">
+    <!-- 大标题名称 -->
+    <h1>飛行艇</h1>
+    <!-- 小标题一句话介绍 -->
+    <h5>My Name Is Wu Rao Kong Shan</h5>
+    <!-- 获取访客IP -->
+    <script type="application/javascript">
+        function getIP(json) {
+            document.write("您的IP: ", json.ip);
+        }
+    </script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    <br>
+    <!-- 一言和今日诗词2选1,去掉注释即可，选择诗词 -->
+    <!-- 一言 -->
+    <p id="hitokoto_text">em...</p>
 
-				<!-- 今日诗词 -->
-				<!-- <img src="https://v2.jinrishici.com/one.svg?font-size=30&spacing=2&color=Gainsboro"> -->
+    <!-- 今日诗词 -->
+    <!-- <img src="https://v2.jinrishici.com/one.svg?font-size=30&spacing=2&color=Gainsboro"> -->
 
-				<!-- 导航按钮 -->
-				<p><a href="https://blog.hikoutei.com">BLOG</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://img.hikoutei.com">图片</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://pan.hikoutei.com">云盘</a>&nbsp;&nbsp;</p>
-			</header>
-			<footer id="footer">
-				<!-- 图标按钮 -->
-				<ul class="icons">
-					<li><a href="http://wpa.qq.com/msgrd?v=3&uin=545776081&site=qq&menu=yes" class="fa fa-qq fa-2x"><span class="label"></span></a></li>
-					<li><a href="https://github.com/FengChengLei" class="fa fa-github fa-2x"><span class="label"></span></a></li>
-					<li><a href="mailto:fengchenglei@gmail.com" class="fa fa-envelope-o fa-2x"><span class="label"></span></a></li>
-				</ul>
-				<!-- 底部信息 -->
-				<ul class="copyright">
-					<li>&copy; 2018-2021 Hikoutei &  ICP 20021314</li><br>
-				<!-- 企鹅图标 -->
-            <img src="https://cdn.jsdelivr.net/gh/x0620x/baotai/assets/img/linux.svg" alt="jsDelivr" style="height: 2.2em;">
-			    <!-- 网站地图 -->
-			<a href="https://" target="_blank" title="BlogMap">
+    <!-- 导航按钮 -->
+    <p><a href="https://blog.hikoutei.com">BLOG</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://img.hikoutei.com">图片</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+            href="https://pan.hikoutei.com">云盘</a>&nbsp;&nbsp;</p>
+</header>
+<footer id="footer">
+    <!-- 图标按钮 -->
+    <ul class="icons">
+        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=545776081&site=qq&menu=yes" class="fa fa-qq fa-2x"><span
+                class="label"></span></a></li>
+        <li><a href="https://github.com/FengChengLei" class="fa fa-github fa-2x"><span class="label"></span></a></li>
+        <li><a href="mailto:fengchenglei@gmail.com" class="fa fa-envelope-o fa-2x"><span class="label"></span></a></li>
+    </ul>
+    <!-- 底部信息 -->
+    <ul class="copyright">
+        <li>&copy; 2018-2024 Hikoutei & ICP 20021314</li>
+        <br>
+        <p><span id="runtime_span">正在回忆我们相遇的时间...</span></p>
+        <!-- 开始加载运行时间 -->
+        <script type="text/javascript">
+            function show_runtime() {
+                window.setTimeout("show_runtime()", 1000);
+                X = new Date("2021/3/27 00:00:00");
+                Y = new Date();
+                T = (Y.getTime() - X.getTime());
+                M = 24 * 60 * 60 * 1000;
+                a = T / M;
+                A = Math.floor(a);
+                b = (a - A) * 24;
+                B = Math.floor(b);
+                c = (b - B) * 60;
+                C = Math.floor((b - B) * 60);
+                D = Math.floor((c - C) * 60);
+                runtime_span.innerHTML = "我们已经相遇" + A + "天" + B + "小时" + C + "分" + "了，永远都爱你！" /* + D + "秒" */;
+            }
+
+            show_runtime();
+        </script>
+        <!-- 加载运行时间结束 -->
         <span class="badge-subject">Modified</span><span class="badge-value bg-red">MAP</span>
-    </a>
-				</ul>
-			</footer>
+        </a>
+    </ul>
+</footer>
 
 <!-- 一言JSON,如果选择今日诗词，这部分注释掉 -->
 <script>
-  var xhr = new XMLHttpRequest();
-  xhr.open('get', 'https://v1.hitokoto.cn');
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      var data = JSON.parse(xhr.responseText);
-      var hitokoto = document.getElementById('hitokoto_text');
-      hitokoto.href = 'https://v1.hitokoto.cn/?uuid=' + data.uuid
-      hitokoto.innerText = data.hitokoto;
+    var xhr = new XMLHttpRequest();
+    xhr.open('get', 'https://v1.hitokoto.cn');
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            var hitokoto = document.getElementById('hitokoto_text');
+            hitokoto.href = 'https://v1.hitokoto.cn/?uuid=' + data.uuid
+            hitokoto.innerText = data.hitokoto;
+        }
     }
-  }
-  xhr.send();
+    xhr.send();
 </script>
 
 <!-- 渐变背景JS -->
@@ -97,26 +118,26 @@
 
 <!-- 渐变背景初始化 -->
 <script>
-var granimInstance = new Granim({
-    element: '#canvas-image-blending',
-    direction: 'top-bottom',
-    isPausedWhenNotInView: true,
-    image : {
-		source: 'https://api.nxvav.cn/api/bing',
-        blendingMode: 'multiply'
-    },
-    states : {
-        "default-state": {
-            gradients: [
-                ['#29323c', '#485563'],
-                ['#FF6B6B', '#556270'],
-                ['#80d3fe', '#7ea0c4'],
-                ['#f0ab51', '#eceba3']
-            ],
-            transitionSpeed: 7000
+    var granimInstance = new Granim({
+        element: '#canvas-image-blending',
+        direction: 'top-bottom',
+        isPausedWhenNotInView: true,
+        image: {
+            source: 'https://api.nxvav.cn/api/bing',
+            blendingMode: 'multiply'
+        },
+        states: {
+            "default-state": {
+                gradients: [
+                    ['#29323c', '#485563'],
+                    ['#FF6B6B', '#556270'],
+                    ['#80d3fe', '#7ea0c4'],
+                    ['#f0ab51', '#eceba3']
+                ],
+                transitionSpeed: 7000
+            }
         }
-    }
-});
-	</script>
-	</body>
+    });
+</script>
+</body>
 </html>
