@@ -60,8 +60,8 @@
         <a href="https://blog.hikoutei.com">BLOG</a>
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <a href="https://img.hikoutei.com">图片</a>
-<!--        &nbsp;&nbsp;|&nbsp;&nbsp;-->
-<!--        <a href="https://pan.hikoutei.com">云盘</a>&nbsp;&nbsp;-->
+        <!--        &nbsp;&nbsp;|&nbsp;&nbsp;-->
+        <!--        <a href="https://pan.hikoutei.com">云盘</a>&nbsp;&nbsp;-->
     </p>
 </header>
 <footer id="footer">
@@ -107,9 +107,9 @@
     xhr.open('get', 'https://v1.hitokoto.cn');
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
-            var data = JSON.parse(xhr.responseText);
-            var hitokoto = document.getElementById('hitokoto_text');
-            hitokoto.href = 'https://v1.hitokoto.cn/?uuid=' + data.uuid
+            const data = JSON.parse(xhr.responseText);
+            const hitokoto = document.querySelector('#hitokoto_text');
+            hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
             hitokoto.innerText = data.hitokoto;
         }
     }
